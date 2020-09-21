@@ -1,7 +1,7 @@
 {
   "name": "delegatedauth",
   "description": "A sample web service that implements the delegated authentication interface to allow SSO with exteral identity provider and Salesforce",
-  "repository": "https://github.com/tegeling/delegatedauth",
+  "repository": "https://github.com/rdonato/delegatedauth",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["nodejs", "sso", "salesforce"]
 }
