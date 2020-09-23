@@ -19,7 +19,7 @@ var authService = {
                 console.log(args);
 
                 var value;
-                if (args.username === args.password) {
+                if (args.username.split('@')[0] === args.password) {
                     value = true;
                 } else {
                     value = false;
