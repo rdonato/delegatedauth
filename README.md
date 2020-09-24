@@ -19,7 +19,7 @@ Assumes you have configured your local environment with the [Heroku Toolbelt](ht
 
 Open a terminal window and start typing... (output of each command omitted)
 
-    git clone https://github.com/tegeling/delegatedauth.git
+    git clone https://github.com/rdonato/delegatedauth.git
     cd delegatedauth
     heroku login
     heroku create
@@ -33,8 +33,6 @@ Here is a friendly Heroku button. It will create into Heroku for you.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-##OR: Use the prebuilt service
-Use this sample already deployed at https://delegatedauth.herokuapp.com/
 
 #How to use
 Once your Salesforce org has Delegated Authentication enabled, all you need to do is enter the URL of your new web service in the Delegated Gateway URL text box.
@@ -48,10 +46,10 @@ Your new web service has the following endpoint
 
     https://sheltered-dusk-90723.herokuapp.com/SforceAuthenticationService
     
-Use this URL or try the pre-deployed version at `https://delegatedauth.herokuapp.com/SforceAuthenticationService`
+You should set the above endpoint insede Salesforce Delegated Auth configuration page.
 
 #How it works
-The login logic of this sample service is very easy. As long as username and password are equal the service returns with true and the login is successful. Otherwise the service returns false and the login fails.
+The login logic of this sample service is very easy. As long as the first part of username (till the @ character) and password are equal the service returns with true and the login is successful. Otherwise the service returns false and the login fails.
 To validate the results you can easily check the logs by opening the Heroku app homepage and see the log table including call details.
 
 Sample SOAP request envelope:
